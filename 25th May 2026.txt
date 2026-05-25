@@ -1,0 +1,90 @@
+show collections
+Employee
+db.Employee.insert({name:'Jayanth', department:'ECE'})
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6a14583a7bd474390a412f96')
+  }
+}
+db.Employee.insert({name:'Tamil', mark:90, location:'channai'})
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6a14588a7bd474390a412f97')
+  }
+}
+db.Employee.find()
+{
+  _id: ObjectId('6a14583a7bd474390a412f96'),
+  name: 'Jayanth',
+  department: 'ECE'
+}
+{
+  _id: ObjectId('6a14588a7bd474390a412f97'),
+  name: 'Tamil',
+  mark: 90,
+  location: 'channai'
+}
+vit
+show databases
+admin   40.00 KiB
+config  60.00 KiB
+local   72.00 KiB
+dbs
+ReferenceError: dbs is not defined
+show dbs
+admin   40.00 KiB
+config  60.00 KiB
+local   72.00 KiB
+use vit
+switched to db vit
+db.dropDatabase()
+{ ok: 1, dropped: 'vit' }
+db.createCollection("Student")
+{ ok: 1 }
+show collections
+Student
+db.Student.drop()
+true
+show collections
+db.createCollection("Employee")
+{ ok: 1 }
+show databases
+admin    40.00 KiB
+config  108.00 KiB
+local    72.00 KiB
+vit       8.00 KiB
+db
+vit
+show collections
+Employee
+db.Employee.insert({name:'Jayanth', department:'ECE'})
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6a14583a7bd474390a412f96')
+  }
+}
+db.Employee.insert({name:'Tamil', mark:90, location:'channai'})
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6a14588a7bd474390a412f97')
+  }
+}
+db.Employee.find()
+{
+  _id: ObjectId('6a14583a7bd474390a412f96'),
+  name: 'Jayanth',
+  department: 'ECE'
+}
+{
+  _id: ObjectId('6a14588a7bd474390a412f97'),
+  name: 'Tamil',
+  mark: 90,
+  location: 'channai'
+}
+vit
